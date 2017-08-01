@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, user-scalable=yes, width=device-width">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' mailto:* tel:* data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="360">
+    
+
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <!-- app scripts -->
+    <script src="js/jquery.1.10.2.min.js"></script>
+    <script src="js/app.js"></script>
+    
+    <!-- style -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    
+
+
+<table id="main" cellpadding="0">
+	<tr id="controls-tr">
+		<td>
+			<div id="controls-container">
+				<div class="main-title"><h1>Spyrise</h1><h3>Choose number of players</h3></div>
+				
+				
+				
+				<div id="controls">
+					<div class="rolerow">
+						<div class="role">Number of players</div>
+						
+						<div class="input-group">
+							<span class="input-group-btn">
+								<button class="btn btn-primary btn-minus" type="button"><span class="glyphicon glyphicon-minus"></span></button>
+							</span>
+							<span class="form-control input-group-addon rolecount">0</span>
+							<span class="input-group-btn">
+								<button class="btn btn-primary btn-plus" type="button"><span class="glyphicon glyphicon-plus"></span></button>
+							</span>
+						</div>
+					</div>
+				
+				</div>
+				
+				<div id="locationlist">
+					<h3>Locations</h3>
+				</div>
+			</div>
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+	
+	<tr id="game-tr">
+		<td colspan="2">
+			<div id="showrole"></div>
+			<div id="game"></div>
+		</td>
+	</tr>
+	
+	<tr id="total-tr">
+		<td colspan="2" id="total-td">
+			<div id="total">
+				<h3>Players: <span class="totalcount" id="totalcount">0</span></h3>
+				<button type="button" class="btn btn-success" id="btn-start">Start Game</button>
+				<button type="button" class="btn btn-danger" id="btn-newgame">New Game</button>
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+
+<div id="samplecode">
+	<div id="getrole">
+		<h3>Make sure nobody else is looking at this screen, then
+			<button type="button" id="btn-getrole" class="btn btn-primary btn-lg" onclick="showRole()">Get my role</button>
+		</h3>
+	</div>
+</div>
+
+
+
+
+  </body>
+</html>

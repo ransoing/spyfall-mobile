@@ -1,0 +1,16 @@
+{
+  "name": "spyrise",
+  "version": "1.0.0",
+  "description": "Spyfall clone",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "cordovaPlugins": [
+    "cordova-plugin-whitelist",
+    "cordova-plugin-console",
+    "cordova-plugin-statusbar",
+    "cordova-plugin-device"
+  ],
+  "cordovaPlatforms": []
+}
